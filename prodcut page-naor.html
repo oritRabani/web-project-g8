@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>תותי פרוטי- פלטת פירות</title>
+		<link rel="stylesheet" href="css/final.css">
+		<link rel="shortcut icon" href="imageProject/painapple.jpg">
+		<script src="./JS/modal.js"></script>
+
+	</head>
+	<body >
+		<!-- Header & Nav -->
+		<header>
+			<!-- Navigation links -->
+
+			<nav id="nava">
+				<h1><span class="highlight">תותי</span> פרוטי<img src="imageProject/strTitle.jpeg" style="height:5vw"></h1>
+				<div>
+					<b>
+					<a class="navlink" id = "home" href="index.html">בית</a>
+					<a class="navlink" href="selfAssembly.html">הרכבה עצמית</a>
+					<a class="navlink" href="season.html">סל קניות</a>
+					<a class="navlink" href="contact.html">צור קשר</a>
+				</b>
+				</div>
+			</nav>
+				<div>
+				<b>
+				<a class="navlink" href="register.html">הרשמה</a>
+				<a class="navlink" href="login.html">התחברות</a>
+				</b>
+				</div>
+		</header>
+
+		<main>
+		<h2>Our Packages</h2>
+		<h3 >
+			<div>FOOD</div>
+			<div>Clothes & Home</div>
+			<div>Cash Donation</div>
+		</h3>
+     		<div class="images_buttons">
+				<a id="F_product1" onclick="F_product1()" style="background-image:url(imageProject/food\ basket.jpg)"
+					alt="F_product1">
+					<span>Food Basket </span>
+				</a>
+				
+        		<a id="CH_product1" onclick="CH_product1()" style="background-image:url(imageProject/PillowsAndBlankets2.jfif)"
+					alt="CH_product1">
+					<span>Pillows & Blankets</span>
+				</a>
+				
+				<a  id="Cash1" onclick="Cash1()" style="background-image:url(imageProject/CashPic.jpg)"
+					alt="Cash1">
+					<span>100 NIS</span>
+				</a>
+
+		 		<a id="F_product2" onclick="F_product2()" style="background-image:url(imageProject/warm\ food.jpg)"
+					alt="F_product2">
+					<span>Hot Food</span>
+				</a>
+
+				<a  id="CH_product2" onclick="CH_product2()" style="background-image:url(imageProject/PotsAndPans.jfif)"
+					alt="CH_product2">
+					<span>Pots & Pans</span>
+				</a>
+				
+				<a  id="Cash2" onclick="Cash2()" style="background-image:url(imageProject/CashPic.jpg)"
+					alt="Cash2">
+					<span>200 NIS</span>
+				</a>
+
+        		<a id="F_product3" onclick="F_product3()" style="background-image:url(imageProject/candis.png)"
+					alt="F_product3">
+					<span>Candies</span>
+				</a>
+
+		 		<a id="CH_product3" onclick="CH_product3()" style="background-image:url(imageProject/Pjs.png)"
+					alt="CH_product3">
+					<span>Pajamas</span>
+				</a>
+
+				<a  id="Cash3" onclick="Cash3()" style="background-image:url(imageProject/CashPic.jpg)"
+					alt="Cash3">
+					<span>Your choice</span>
+				</a>
+
+			</div>
+			<div id="id01" class="modal">
+				<form class="modal-content animate" >
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+						 <img id="modal_img" src="" alt="Avatar" class="avatar">
+					</div>
+					    <div class="container">
+							<p id = target>
+							</p>
+							<label for="amountNum">Quantity:</label>
+							<input  id="amountNum" type="number" min="0" >
+                            <button class="modalbutton">Apply</button>
+						</div>
+					<div class="container">
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="modalbutton"  id="cancelbtn">Back</button>
+					</div>
+				</form>
+			</div>
+
+			<!-- for cash donation : 100 or 200 NIS -->
+			<div id="id02" class="modal"> 
+				<form class="modal-content animate" >
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+						 
+					</div>
+					    <div class="container">
+							<p id = target2>
+							</p>
+                            <button class="modalbutton">Apply</button>
+						</div>
+					<div class="container">
+						<button type="button" onclick="document.getElementById('id02').style.display='none'" class="modalbutton"  id="cancelbtn">Back</button>
+					</div>
+				</form>
+			</div>
+
+			<!-- for cash donation : other price of the user choice -->
+			<div id="id03" class="modal"> 
+				<form class="modal-content animate">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+						 
+					</div>
+					    <div class="container">
+							<p id = target3>
+							</p>
+							<label for="amountOFcash">Amount:</label>
+							<input  id="amountOFcash" type="number" step="50" min="50" >
+                            <button class="modalbutton">Apply</button>
+						</div>
+					<div class="container">
+						<button type="button" onclick="document.getElementById('id03').style.display='none'" class="modalbutton"  id="cancelbtn">Back</button>
+					</div>
+				</form>
+			</div>
+		</main>
+
+
+
+		<!-- Page footer -->
+		<footer>
+			<p><button id="checkOut_Button">Proceed to checkout <a href=""></a></button>
+				<button id="reset_Button" type="reset">Reset my choices</button>
+			</p>
+		</footer>
+	</body>
+</html>
