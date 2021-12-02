@@ -5,8 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="checkout.css">
+    <script src="checkout.js"></script>
 </head>
 <body>
-    
+    <div class='container'>
+        <div class='window'>
+          <div class='order-info'>
+            <div class='order-info-content'>
+              <h2>Donation Summary <button id="goBack" onclick="goBackToProductPage()">Go Back</button></h2>
+                      <div class='line'></div>
+              <table class='order-table'>
+                <tbody>
+                  <tr>
+                    <td><img src='imageProject/food basket.jpg' class='full-width'></img>
+                    </td>
+                    <td>
+                      <br> <span class='thin'>Food Basket</span>
+                    </td>
+      
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class='price'>120 NIS</div>
+                    </td>
+                  </tr>
+                </tbody>
+      
+              </table>
+              <div class='line'></div>
+              <table class='order-table'>
+                <tbody>
+                  <tr>
+                    <td><img src='imageProject/PillowsAndBlankets2.jfif' class='full-width'></img>
+                    </td>
+                    <td>
+                      <br> <span class='thin'>Pillows & Blankets</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class='price'>250 NIS</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class='line'></div>
+              <table class='order-table'>
+                <tbody>
+                  <tr>
+                    <td><img src='imageProject/CashPic.jpg' class='full-width'></img>
+                    </td>
+                    <td>
+                      <br> <span class='thin'>Cash Donation</span>
+                    </td>
+      
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class='price'>100 NIS</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class='line'></div>
+              <div class='total'>
+                <span style='float:left;'>
+                  TOTAL
+                </span>
+                <span style='float:right; text-align:right;'>
+                  470 NIS
+                </span>
+              </div>
+      </div>
+      </div>
+      <form action="">
+              <div class='credit-info'>
+                <div class='credit-info-content'>
+                  <table class='half-input-table'>
+                    <tr><td>Please select your card: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
+                      <div class='dropdown-select'>
+                      <ul>
+                        <li>Master Card</li>
+                        </ul></div>
+                      </div>
+                     </td></tr>
+                  </table>
+                  <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
+                  Card Number
+                  <input class='input-field' type="number" minlength="16" maxlength="16" id="cardNum" required></input>
+                  Card Holder ID
+                  <input class='input-field' type="number" minlength="9" maxlength="9" id="id" required></input>
+                  <table class='half-input-table'>
+                    <tr>
+                      <td> Expire Month
+                        <input class='input-field' type="number" min="1" max="12" id="expireMonth" required></input>
+                      </td>
+                      <td>Expire Year
+                        <input class='input-field' type="number" min="2021" max="2032"  id="expireYear" required></input>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class='half-input-table'>
+                    <tr>
+                      <td> CVC
+                        <input class='input-field' type="number" minlength="3" maxlength="3" id="CVC" required></input>
+                      </td>
+                      <td></td>
+                    </tr>
+                  </table>
+                  <button class='pay-btn' onclick=" return checkExpire()"> Pay donation</button><br><br>
+                  <p id="message"></p>
+                </div>
+              </div>
+            </form>
+            </div>
+      </div>
 </body>
 </html>
