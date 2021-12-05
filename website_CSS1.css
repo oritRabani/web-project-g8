@@ -1,11 +1,10 @@
-
-
 /* GLOBAL STYLES
 -----------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 *{box-sizing: border-box;
-    font-family: 'Amatic SC', cursive;
-    font-size:3vw;
+    font-family: 'Georgia';
+    font-size: 2vw;
+    color: #19335A;
     }
 
 :root{--boldPeach:#bf6d50
@@ -28,7 +27,7 @@ h2 {
 }
 
 h3 {
-  font-size: 4vw;
+  font-size: 3vw;
   direction: ltr;  /* Right to Left */
   padding-top: 5px;
   margin: 0;
@@ -36,7 +35,9 @@ h3 {
 
 h3 div{
   display: inline-block;
-  width: 27%;
+  width: 300px;
+  background-color: #d1c1a5;
+  border-radius: 15px;
 }
 
 /*HEDAER AND NAV*/
@@ -74,13 +75,17 @@ header{
 /*MAIN
 -----------------------------------------*/
 main {
-    background: #ecab94;
+    background: whitesmoke;
     width: 100%;
     margin-top: 10%;
 }
 
 /*HOME PIC
 --------------------------------------------------*/
+  #packageTitle{
+    background-color: #d1c1a5;
+    border-radius: 15px;
+  }
 
 .images_buttons {
 	display: flex;
@@ -92,8 +97,8 @@ main {
 .images_buttons a {
 	width: 23%;
 	background-size: cover;
-    background-position: center;
-    border-radius: 20%;
+  background-position: center;
+  border-radius: 20%;
 	margin: 25px 15px;
 	background-repeat: no-repeat;
 	}
@@ -102,9 +107,9 @@ main {
 	margin-top: 100%;
 	display: block;
 	text-align:center;
-	color: #fff;
+	color: #19335A;
 	font-weight: bold;
-    font-size: larger;
+
 	}
   
   #Cash{
@@ -114,35 +119,32 @@ main {
 
 .images_buttons a:hover {
 	cursor:pointer;
-    box-shadow: 10px 10px 5px var(--boldPeach);
+  box-shadow: 10px 10px 5px #2b6777;
 	}
   
 .images_buttons a:hover span {
-    color: var(--boldPeach);
+    color: #2b6777;
 	}
 
 
 /* The Modal Product*/
 #cancelbtn {
-  width: auto;
   padding: 10px 18px;
-  background-color: darkgray;
 }
 
 footer p button {
-  width: auto;
+  width: 200px;
   padding: 10px 18px;
   margin: 40px;
+  border-radius: 15px;
 }
 
-#reset_Button{
-  background-color: darkgray;
-}
 .modalbutton{
   font-size: 2vw;
   text-align: center;
-  width: auto;
+  width: 110px;
   height: 55px;
+  border-radius: 15px;
 }
 
 .imgcontainer {
@@ -163,10 +165,18 @@ img.avatar {
 
 #amountNum{
   text-align: center;
+  width: 20%;
+  height: 55px;
+  border-radius: 15px;
+  font-size: 2vw;
 }
 
 #amountOFcash{
   text-align: center;
+  width: 20%;
+  height: 55px;
+  border-radius: 15px;
+  font-size: 2vw;
 }
 
 span.psw {
@@ -191,7 +201,7 @@ span.psw {
   right: 25px;
   top: 0;
   color: #000;
-  font-size: 45px;
+  font-size: 3vw;
   font-weight: bold;
 }
 
@@ -233,41 +243,61 @@ footer {
 /* REGISTER+LOGIN STYLES
 ---------------------------------------*/
 form {
-   display: inline-block;
-  background-color: antiquewhite;
+  display: inline-block;
+  background-color: #d1c1a5;
   border: 3px solid #f1f1f1;
-  width: 40%;
-  font-size: 1.5vw;
+  border-radius: 15px;
+  width: 60%;
+  font-size: 2vw;
+  color: #19335A;
 }
 
 .register{
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: bold;
 }
 
-/* Full-width inputs */
-input[type=text], input[type=password] ,input[type=email], textarea[type=message]{
-   direction: ltr;
+.question{
+  font-size: 1.5vw;
+}
+
+#SignIn{
   width: 100%;
+  float: center;
+}
+
+#goBackToHomePage{
+  width: 10%;
+  float: left;
+  text-align: center;
+  font-size: 1.3vw;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] ,input[type=email], textarea[type=message], input[type=date], input[type=tel]{
+   direction: ltr;
+  width: 50%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
-  font-size: 2vw;
+  font-size: 1vw;
+  border-radius: 15px;
 }
 
 /* Set a style for all buttons */
 button {
-  background-color: #bf6d50;
-  color: white;
+  background-color: #8FC8EB;
+  color: #19335A;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
-  font-size: 2vw;
+  width: 20%;
+  font-size: 1.5vw;
   font-weight: bold;
+  border-radius: 15px;
 }
 
 /* Add a hover effect for buttons */
@@ -294,5 +324,4 @@ button:hover {
  .register{
   font-size: 5vw ;
  }
-
 }

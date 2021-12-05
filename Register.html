@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GiveByClick - Sign up</title>
+	<link rel="stylesheet" href="website_CSS1.css">
+	<link rel="shortcut icon" href="imageProject/painapple.jpg">
+	<script src="Register.js"></script>
+</head>
+<body>
+<!-- Header & Nav -->
+<header>
+	<!-- Navigation links -->
+	<!-- 
+	<nav id="nava">
+		<h1><span class="highlight">תותי</span>פרוטי</h1>
+		<b>
+			<a class="navlink" id="home" href="index.html">בית</a>
+			<a class="navlink" href="about.html">הרכבה עצמית</a>
+			<a class="navlink" href="shoppingcart.html">סל קניות</a>
+			<a class="navlink" href="contact.html">צור קשר</a>
+		</b>
+	</nav>
+	<div>
+		<b>
+			<a class="navlink" href="register.html">הרשמה</a>
+			<a class="navlink" href="login.html">התחברות</a>
+		</b>
+	</div>
+	-->
+</header>
+
+<main>
+
+	<section id="register" class="section">
+			<br>
+		<form action="" onsubmit="return validUser()">
+			<div class="container">
+				<h3>Sign Up</h3>
+                <p class = "question"> Already a user? <a href="Login.html" style="text-decoration:none" class="question">Sign in</a> </p>
+                <label for="RegName"><b class ="register">Full Name</b></label><br>
+				<input type="text" placeholder="Enter Name" name="RegName" id="RegName" required> <br>
+				<label for="email"><b class ="register">Email</b></label><br>
+				<input type="email" placeholder="Enter Email" name="email" id="email" required><br>
+                <label for="Bday"><b class ="register">Date of birth</b></label><br>
+				<input type="date"  name="Bday" id="Bday" required> <br>
+				<label for="PhoneNum"><b class ="register">Phone Number</b></label><br>
+				<input type="tel" placeholder="Enter phone number" name="PhoneNum" id="PhoneNum" pattern="[0]{1}[5]{1}[0-9]{8}" required> <br>
+				<label for="psw"><b class="register">Password</b></label><br>
+				<input type="password" placeholder="Enter Password" name="psw" id="psw" required> <br>
+				<label  for="psw_repeat"><b class="register">Confirm your password</b></label><br>
+				<input type="password" placeholder="Enter Password again" name="psw-repeat" id="psw_repeat" required><br>
+				<div class="clearfix">
+					<button type="submit"  class="signupbtn" >Sign up</button>
+				</div>
+			</div>
+		</form>
+	<br>
+	<br>
+	</section>
+</main>
+		<!-- Page footer -->
+		<footer>
+			 <!--<p> <b> <span class="highlight" id="talk">דברו איתנו: </span>  0547252304 </b> </p> -->
+		</footer> 
+</body>
+</html>

@@ -2,7 +2,8 @@
 body,html {
   height:100%;
   margin:0;
-  font-family:lato;
+  font-family: 'Georgia';
+  color: #19335A;
 }
 
 h2 {
@@ -11,7 +12,7 @@ h2 {
   text-align:center;
   font-weight:200;
   font-size:19px;
-  font-size:1.2rem;
+  font-size:2vw;
   
 }
 .container {
@@ -28,8 +29,7 @@ h2 {
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
-  background:-webkit-linear-gradient(#c5e5e5, #ccddf9);
-  background:linear-gradient(#c9e5e9,#ccddf9);
+  background-color: whitesmoke;
 }
 .dropdown-select.visible {
   display:block;
@@ -51,7 +51,7 @@ ul li:hover {
 }
 .dropdown-select {
   position:absolute;
-  background:#77aaee;
+  background:#d1c1a5;
   text-align:left;
   box-shadow:0px 3px 5px 0px rgba(0,0,0,0.1);
   border-bottom-right-radius:5px;
@@ -64,17 +64,19 @@ ul li:hover {
 }
 .thin {
   font-weight:400;
+  font-size:1.5vw;
 }
 .small {
   font-size:12px;
   font-size:.8rem;
+  font-size:1vw;
 }
 .half-input-table {
   border-collapse:collapse;
   width:100%;
 }
 .half-input-table td:first-of-type {
-  border-right:10px solid #4488dd;
+  border-right:10px solid #d1c1a5;
   width:50%;
 }
 .window {
@@ -109,7 +111,7 @@ ul li:hover {
   bottom:0px;
   position:absolute;
   right:0px;
-  color:#4488dd;
+  color:#19335A;
 }
 .order-table td:first-of-type {
   width:25%;
@@ -138,12 +140,13 @@ ul li:hover {
 }
 .pay-btn {
   border:none;
-  background:#22b877;
+  font-weight: bold;
+  background:#8FC8EB;
   line-height:2em;
   border-radius:10px;
   font-size:19px;
   font-size:1.2rem;
-  color:#fff;
+  color:#19335A;
   cursor:pointer;
   position:absolute;
   bottom:25px;
@@ -152,10 +155,30 @@ ul li:hover {
           transition:all .2s ease;
 }
 .pay-btn:hover {
-  background:#22a877;
-    color:#eee;
+  font-weight: bold;
+  background:#2b6777;
+  color:#19335A;
   -webkit-transition:all .2s ease;
           transition:all .2s ease;
+}
+#divGoBack{
+  background-color: whitesmoke;
+  height: 20px;
+}
+#goBack{
+  background-color: #8FC8EB;
+  color: #19335A;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  font-size: 1.3vw;
+  font-weight: bold;
+  border-radius: 15px;
+}
+#goBack:hover{
+  background-color: #2b6777;
 }
 
 .total {
@@ -173,25 +196,29 @@ ul li:hover {
   font-size:1rem;
 }
 .input-field {
+  font-family: 'Georgia' ;
   background:rgba(255,255,255,0.1);
   margin-bottom:10px;
   margin-top:3px;
   line-height:1.5em;
-  font-size:20px;
+  font-size:2vw;
   font-size:1.3rem;
   border:none;
   padding:5px 10px 5px 10px;
-  color:#fff;
+  color:#19335A;
   box-sizing:border-box;
   width:100%;
   margin-left:auto;
   margin-right:auto;
+  border-radius: 15px;
+  border-color: #19335A;
+  border-style: solid;
 }
 form {
-  background:#4488dd;
+  background:#d1c1a5;
   height:100%;
   width:50%;
-  color:#eee;
+  color:#19335A;
   -webkit-box-pack:center;
   -webkit-justify-content:center;
       -ms-flex-pack:center;
@@ -211,6 +238,8 @@ form {
 }
 .dropdown-btn {
   background:rgba(255,255,255,0.1);
+  border-color: #19335A;
+  border-style: solid;
   width:100%;
   border-radius:5px;
   text-align:center;

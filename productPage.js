@@ -1,4 +1,3 @@
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target === document.getElementById('id01')) {
@@ -11,7 +10,6 @@ window.onclick = function(event) {
         document.getElementById('id03').style.display = "none";
     }
 }
-
 
 function CH_product3() {
     document.getElementById('id01').style.display='block'; // show the
@@ -114,7 +112,8 @@ function Cash1() {
     let words = '<p>' +
                      par+ 'Donate to orginiztions' +
                     '<br>'+
-                    'for each cash donation 10% will be added by the organization'+
+                    '10% will be added by the organization'+
+                    '<br>'+
                     '<br>'+
                     'Donation price : 100 NIS' +
                 '</p>';
@@ -128,7 +127,8 @@ function Cash2() {
     let words = '<p>' +
                      par+ 'Donate to orginiztions' +
                     '<br>'+
-                    'for each cash donation 10% will be added by the organization'+
+                    '10% will be added by the organization'+
+                    '<br>'+
                     '<br>'+
                     'Donation price : 200 NIS' +
                 '</p>';
@@ -142,7 +142,8 @@ function Cash3() {
     let words = '<p>' +
                      par+ 'Donate to orginiztions' +
                     '<br>'+
-                    'for each cash donation 10% will be added by the organization'+
+                    '10% will be added by the organization'+
+                    '<br>'+
                     '<br>'+
                     'Donation price : your choice' +
                 '</p>';
@@ -158,18 +159,7 @@ function mediaModal(){  //check if it mobile screen size
     }
     return par;  // returns tag needed
 }
-/*
-let txt='מגשים מומלצים';
- let i=0;
-function text() {   //inside letters animation
-    if (i<txt.length ){}
-    {
-        document.getElementById("text").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(text,80);
-    }
-}
-*/
+
 // registration valid
 function validUS() {
     let firstpassword=document.getElementById("psw").value;

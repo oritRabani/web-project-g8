@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>giveByClick - checkout</title>
     <link rel="stylesheet" href="checkout.css">
     <script src="checkout.js"></script>
 </head>
 <body>
+  <div id= divGoBack> <button id="goBack" onclick="goBackToProductPage()">Go Back</button> </div>
     <div class='container'>
         <div class='window'>
           <div class='order-info'>
             <div class='order-info-content'>
-              <h2>Donation Summary <button id="goBack" onclick="goBackToProductPage()">Go Back</button></h2>
+              <h2>Donation Summary</h2>
                       <div class='line'></div>
               <table class='order-table'>
                 <tbody>
@@ -22,6 +23,7 @@
                     </td>
                     <td>
                       <br> <span class='thin'>Food Basket</span>
+                      <br> <span class='small'>Quantity: 1</span>
                     </td>
       
                   </tr>
@@ -41,6 +43,7 @@
                     </td>
                     <td>
                       <br> <span class='thin'>Pillows & Blankets</span>
+                      <br> <span class='small'>Quantity: 1</span>
                     </td>
                   </tr>
                   <tr>
@@ -59,7 +62,7 @@
                     <td>
                       <br> <span class='thin'>Cash Donation</span>
                     </td>
-      
+                    
                   </tr>
                   <tr>
                     <td>
@@ -114,7 +117,7 @@
                       <td></td>
                     </tr>
                   </table>
-                  <button class='pay-btn' onclick=" return checkExpire()"> Pay donation</button><br><br>
+                  <button class='pay-btn' onclick=" return checkExpire()"> Pay Donation</button><br><br>
                   <p id="message"></p>
                 </div>
               </div>
