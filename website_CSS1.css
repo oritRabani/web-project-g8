@@ -1,11 +1,11 @@
 /* GLOBAL STYLES
 -----------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
-*{box-sizing: border-box;
+*{ box-sizing: border-box;
     font-family: 'Georgia';
     font-size: 2vw;
     color: #19335A;
-    }
+  }
 
 :root{--boldPeach:#bf6d50
 }
@@ -272,6 +272,24 @@ form {
   text-align: center;
   font-size: 1.3vw;
 }
+
+#contactUsDiv{
+  display: inline-block;
+  background-color: #d1c1a5;
+  border: 3px solid #f1f1f1;
+  border-radius: 15px;
+  width: 60%;
+  font-size: 2vw;
+  color: #19335A;
+}
+
+.container img{
+  margin-top: 15px;
+  border-radius: 15px;
+  width: 15%;
+  height: 15%;
+}
+
 
 /* Full-width inputs */
 input[type=text], input[type=password] ,input[type=email], textarea[type=message], input[type=date], input[type=tel]{
