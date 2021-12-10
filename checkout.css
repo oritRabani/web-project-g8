@@ -198,7 +198,7 @@ ul li:hover {
 .input-field {
   font-family: 'Georgia' ;
   background:rgba(255,255,255,0.1);
-  margin-bottom:10px;
+  margin-bottom:5px;
   margin-top:3px;
   line-height:1.5em;
   font-size:2vw;
@@ -287,6 +287,7 @@ form {
     height: 100%;
     display:block;
     border-radius:0px;
+    
   }
   .order-info {
     width:100%;

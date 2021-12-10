@@ -478,3 +478,18 @@ button:hover {
   font-size: 5vw ;
  }
 }
+
+@media only screen and (max-width: 600px) {
+  button {
+    background-color: #8FC8EB;
+    color: #19335A;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    font-size: 1.5vw;
+    font-weight: bold;
+    border-radius: 15px;
+  }
+}
