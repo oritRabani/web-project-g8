@@ -5,35 +5,39 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title> GiveByClick - Products </title>
 		<link rel="stylesheet" href="website_CSS1.css">
-		<link rel="shortcut icon" href="imageProject/painapple.jpg">
-		<script src="productPage.js"></script>
+		<script src="webpage_JS.js"></script>
 
 	</head>
 	<body >
 		<!-- Header & Nav -->
-		<header>
+		
 			<!-- Navigation links -->
-<!--
-			<nav id="nava">
-				<h1><span class="highlight">תותי</span> פרוטי<img src="imageProject/strTitle.jpeg" style="height:5vw"></h1>
-				<div>
-					<b>
-					<a class="navlink" id = "home" href="index.html">בית</a>
-					<a class="navlink" href="selfAssembly.html">הרכבה עצמית</a>
-					<a class="navlink" href="season.html">סל קניות</a>
-					<a class="navlink" href="contact.html">צור קשר</a>
-				</b>
-				</div>
-			</nav>
-				<div>
-				<b>
-				<a class="navlink" href="register.html">הרשמה</a>
-				<a class="navlink" href="login.html">התחברות</a>
-				</b>
-				</div>
-				 -->
-		</header>
+			<header>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+			<div class="TopAreaContainer">
+		   
+				<div id="Donate" class="topAreaGroup">
+					<button class="topButton" onclick="window.location.href='productPage.html'">Donate</button>
+				</div>
+
+				<div id="Logo" class="topAreaGroup">
+					<img src="imageProject/Logo.jpeg" id="Logo">
+				</div>
+	
+				<div id="LogIn" class="topAreaGroup">
+					<button class="topButton" onclick="window.location.href='Login.html'">Log In</button>
+				</div>
+			</div>
+	
+			<div id="NavBar">
+				<a class="NavLink" href="HomePage.html">Home</a>
+				<a class="NavLink" href="About Us.html">About Us</a>
+				<a class="NavLink" href="productPage.html">Our Packages</a>
+				<a class="NavLink" href="OurPartners.html">Our Partners</a>
+				<a class="NavLink" href="ContactUs.html">Contact Us</a>
+			</div>
+		</header>
 		<main>
 		<h2 id= packageTitle>Our Packages</h2>
 		<h3 >
@@ -146,13 +150,24 @@
 			</div>
 		</main>
 
-
-
 		<!-- Page footer -->
-		<footer>
-			<p><button id="checkOut_Button" onclick="goToCheckout()">Proceed to checkout </button>
+			<p class = "footerProduct"><button id="checkOut_Button" onclick="goToCheckout()">Proceed to checkout </button>
 				<button id="reset_Button" type="reset">Reset my choices</button>
 			</p>
-		</footer>
+			<div id="FooterText">
+				<p style="font-size: x-large; text-align:center">You care, You share, You change!</p>
+			</div>
 	</body>
+	<footer class="site-footer">
+		<div class="flex-container">
+			<a href="PrivacyPolicy.html" class="footer-links">Privacy Policy</a>
+			<a href="FAQ.html" class="footer-links">FAQ</a>
+			<ul class="social-icons">
+				<li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+				<li><a class="twitter" href="https://twitter.com/?lang=he"><i class="fa fa-twitter"></i></a></li>
+				<li><a class="youtube" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+				<li><a class="linkedin" href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a></li>   
+			</ul>
+		</div>
+	</footer>
 </html>

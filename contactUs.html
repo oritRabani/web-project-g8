@@ -7,32 +7,36 @@
 	<title>GiveByClick-Contact Us</title>
 	<link rel="stylesheet" href="website_CSS1.css">
     <script src="https://kit.fontawesome.com/e0c5b4131b.js" crossorigin="anonymous"></script>
-	<link rel="shortcut icon" href="imageProject/painapple.jpg">
 </head>
 <body>
 <!-- Header & Nav -->
 <header>
-	<!-- Navigation links -->
-	<!-- 
-	<nav id="nava">
-		<h1><span class="highlight">תותי</span>פרוטי</h1>
-		<b>
-			<a class="navlink" id="home" href="index.html">בית</a>
-			<a class="navlink" href="about.html">הרכבה עצמית</a>
-			<a class="navlink" href="shoppingcart.html">סל קניות</a>
-			<a class="navlink" href="contact.html">צור קשר</a>
-		</b>
-		</div>
-	</nav>
-	<div>
-		<b>
-			<a class="navlink" href="register.html">הרשמה</a>
-			<a class="navlink" href="login.html">התחברות</a>
-		</b>
-	</div>
-	-->
-</header>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+	<div class="TopAreaContainer">
+			
+		<div id="Donate" class="topAreaGroup">
+			<button class="topButton" onclick="window.location.href='productPage.html'">Donate</button>
+		</div>
+
+		<div id="Logo" class="topAreaGroup">
+			<img src="imageProject/Logo.jpeg" id="Logo">
+		</div>
+
+		<div id="LogIn" class="topAreaGroup">
+			<button class="topButton" onclick="window.location.href='Login.html'">Log In</button>
+		</div>
+	</div>
+
+	<div id="NavBar">
+		<a class="NavLink" href="HomePage.html">Home</a>
+		<a class="NavLink" href="About Us.html">About Us</a>
+		<a class="NavLink" href="productPage.html">Our Packages</a>
+		<a class="NavLink" href="OurPartners.html">Our Partners</a>
+		<a class="NavLink" href="ContactUs.html">Contact Us</a>
+	</div>
+</header>
 
 <main>
 	<section id="contact" class="section" >
@@ -44,7 +48,6 @@
                 <i class="fas fa-map-marker-alt"> Ben-Gurion University, Beer-Sheva, Israel</i> <br><br>
                 <i class="fas fa-at"> giveByClick@gmail.com </i><br><br>
                 <i class="fas fa-phone"> 08-8112395 </i><br><br>
-                <img src="imageProject/Logo.jpeg"> 
 			</div>
         </div>
 		<br>
@@ -53,11 +56,22 @@
 		<br>
 	</section>
 
-
 </main>
-		<!-- Page footer -->
-		<footer>
-			<!--<p> <b> <span class="highlight" id="talk">דברו איתנו: </span>  0547252304 </b> </p> -->
-		</footer>
+<div id="FooterText">
+	<p style="font-size: x-large; text-align:center">You care, You share, You change!</p>
+</div>
 </body>
+	<!-- Page footer -->
+<footer class="site-footer">
+	<div class="flex-container">
+		<a href="PrivacyPolicy.html" class="footer-links">Privacy Policy</a>
+		<a href="FAQ.html" class="footer-links">FAQ</a>
+		<ul class="social-icons">
+			<li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+			<li><a class="twitter" href="https://twitter.com/?lang=he"><i class="fa fa-twitter"></i></a></li>
+			<li><a class="youtube" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+			<li><a class="linkedin" href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a></li>   
+		</ul>
+	</div>
+</footer>
 </html>

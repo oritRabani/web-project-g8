@@ -42,48 +42,78 @@ h3 div{
 
 /*HEDAER AND NAV*/
 
-.navlink{
-  padding: 0 1vw;
-  margin: 0;
-  color: var(--boldPeach);
-  text-decoration: none; /* removes default underline */
-}
-
-#home{
-  padding-right: 3vw;
- }
-/*when typing nav button */
-a.navlink:hover {
-  background: peachpuff;
-}
-
-header{
-    direction: ltr;
-  width: 100%;
-  background: white;
-  display: flex;
-  justify-content: space-between;
+.TopAreaContainer {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
-  text-align: right;
-  overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+  justify-content: space-around;
+  align-content:center;
+  padding: 0 8px;
 }
 
+.topAreaGroup {
+  justify-content: center;
+  align-items: center;
+}
 
+#NavBar {
+  width: 100%;
+  background-color: #d1c1a5;
+  overflow: auto;
+  border-radius: 15px;
+}
+
+#NavBar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%;
+}
+
+#NavBar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#NavBar a.active {
+background-color: #04AA6D;
+color: white;
+}
+
+#Logo {
+  height: 150px;
+  width: 200px;
+}
+
+.topButton {
+  background-color: #8FC8EB;
+  color: #19335A;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  font-size: 1.5vw;
+  font-weight: bold;
+  border-radius: 15px;
+}
 
 /*MAIN
 -----------------------------------------*/
 main {
     background: whitesmoke;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 0%;
 }
 
 /*HOME PIC
 --------------------------------------------------*/
   #packageTitle{
-    background-color: #d1c1a5;
+    background-color: whitesmoke;
     border-radius: 15px;
   }
 
@@ -132,7 +162,7 @@ main {
   padding: 10px 18px;
 }
 
-footer p button {
+.footerProduct button {
   width: 200px;
   padding: 10px 18px;
   margin: 40px;
@@ -205,12 +235,6 @@ span.psw {
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-  color: indianred;
-  cursor: pointer;
-}
-
 /* Add Zoom Animation */
 .animate {
   -webkit-animation: animatezoom 0.6s;
@@ -230,15 +254,126 @@ span.psw {
 
 /* FOOTER STYLES
 -----------------------------------------*/
-footer {
-  text-align: center;
-  padding: 1px;
-  text-transform: lowercase;
-  position: -ms-device-fixed;
-  float: bottom;
-  width: 100%;
-  font-size: 3vw;
+.site-footer {
+  background-color:#d1c1a5;
+  padding:15px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+  border-radius: 15px;
 }
+
+.site-footer a {
+  color: white
+}
+
+.site-footer a:hover {
+  color:#19335A;
+  text-decoration:none;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-links {
+  padding-left:0;
+  list-style:none;
+  text-decoration:none;
+  margin-top: 30px;
+}
+
+.footer-links li {
+  display:block
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+  color:#19335A;
+  text-decoration:none;
+}
+
+.footer-links.inline li {
+  display:inline-block
+}
+
+.site-footer.social-icons {
+  text-align:right
+}
+
+.site-footer.social-icons a {
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+
+.social-icons {
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+
+.social-icons li {
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.social-icons li.title {
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+
+.social-icons a {
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover {
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a {
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover {
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover {
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover {
+  background-color:#007bb6
+}
+.social-icons a.youtube:hover {
+  background-color:#bb0000
+}
+
+#FooterText {
+  width: 100%;
+  height: auto;
+}
+
 
 /* REGISTER+LOGIN STYLES
 ---------------------------------------*/

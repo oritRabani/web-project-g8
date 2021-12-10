@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="website_CSS2.CSS">
+        <script src="webpage_JS.js"></script>
+        <title>GiveByClick</title>
+    </head>
+
+    <body onload="hideOnLoad()">
+        <!-- Add icon library -->
+        <header>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+            <div class="TopAreaContainer">
+             
+           
+                <div id="Donate" class="topAreaGroup">
+                    <button class="topButton" onclick="window.location.href='productPage.html'">Donate</button>
+                </div>
+                
+                <div id="Logo" class="topAreaGroup">
+                    <img src="imageProject/Logo.jpeg" id="Logo">
+                </div>
+    
+                <div id="LogIn" class="topAreaGroup">
+                    <button class="topButton" onclick="window.location.href='Login.html'">Log In</button>
+                </div>
+            </div>
+    
+            <div id="NavBar">
+                <a class="NavLink" href="HomePage.html">Home</a>
+                <a class="NavLink" href="About Us.html">About Us</a>
+                <a class="NavLink" href="productPage.html">Our Packages</a>
+                <a class="NavLink" href="OurPartners.html">Our Partners</a>
+                <a class="NavLink" href="ContactUs.html">Contact Us</a>
+            </div>
+        </header>
+        <div id="Events">
+            <div class="eventFlexBox">
+
+                <div class="event1">
+                <img onclick="getText1()" src="imageProject/mahiaChildren.jpeg" class="picture" id="mahiaChildren">
+                </div>
+
+                <div class="event2">
+                <img onclick="getText2()" src="imageProject/Spectrum.jpeg" class="picture" id="Spectrum">
+                </div>
+
+                <div class="event3">
+                <img onclick="getText3()" src="imageProject/Shiri.jpeg" class="picture" id="Shiri">
+                </div>
+
+                <div class="event4">
+                <img onclick="getText4()" src="imageProject/Levinshtain.jpeg" class="picture" id="Levinshtain">
+                </div>
+                
+            </div>
+        </div>
+    
+        <div id="EventText" class="EventsText_container">
+            <div id="EventText1">
+                <h1> Beit Miha fundraising event </h1>
+                <textarea id="mahiaEvent" class="TextAreas">We believe that every infant, including deaf and hard-of-hearing, has the right to develop his and her communication skills and thrive both academically and personally. Founded in 1953, Beit Micha’s mission is to ensure that every infant with hearing loss be fully integrated by first grade: listening, speaking and thriving like any other six-year-old.
+
+Beit Miha invites you to a fundraising event for deaf and hard of hearing children with a stand-up show by Adir Miller.
+All proceeds for the rehabilitation of the speech and language of the children of Beit Miha. 
+To reserve tickets:
+Start date:
+Monday, 22 March 2022 19:30
+Address:
+Performing Arts Hall, Jabotinsky 15, Herzliya
+Beit Miha invites you to an annual fundraising event for deaf and
+hard of hearing children.
+Proceeds from the event will be dedicated to assisting in the 
+rehabilitation of the hearing of the children of Beit Miha.
+In the program:
+19:30 Reception and light refreshments
+20:30 Congratulations and Beit Miha show
+21:00 A great stand-up show by Miller (45 minutes)
+Looking forward to seeing you,
+Beit Miha staff
+                </textarea>
+            </div>
+
+            <div id="EventText2">
+                <h1> Ahim Gdolim fundraising event </h1>
+                <textarea id="ahimGdolim" class="TextAreas">
+Ahim Gdolim organization invites you to a fundraising event for autestic children. 
+Start date:
+Monday, 22 February 2022 19:30
+Address:
+Performing Arts Hall, Jabotinsky 15, Petah Tikva
+In the program:
+19:30 Reception and light refreshments
+21:00 A great stand-up show by Miller (45 minutes)
+Looking forward to seeing you,
+Ahim Gdolim
+                </textarea>
+            </div>
+
+            <div id="EventText3">
+                <h1> Fundraising event for the Center For Sexual Assault Survivors </h1>
+                <textarea id="survivors" class="TextAreas">                  
+The Center For sexual Assault Survivors  invites you to a fundraising event for children. 
+To reserve tickets:
+Start date:
+Monday, 22 April 2022 19:30
+Address:
+Performing Arts Hall, Jabotinsky 15, Ramat Hasharon
+In the program:
+19:30 Reception and light refreshments
+21:00 Show
+Looking forward to seeing you,
+The Center's staff
+                </textarea>
+            </div>
+
+            <div id="EventText4">
+                <h1> Fundraising event for Levinstein Hospital </h1>
+                <textarea id="hospital" class="TextAreas">
+                    
+Levinshtein Hospital invites you to a fundraising event for children. 
+To reserve tickets:
+Start date:
+Monday, 22 January 2022 19:30
+Address:
+Performing Arts Hall, Jabotinsky 15, Raana
+In the program:
+19:30 Reception and light refreshments
+20:30 Orchestra
+21:00 Dinner
+Looking forward to seeing you,
+Levinshtein Hospital
+                </textarea>
+            </div>
+
+        </div>
+
+        <div class="BottomAreaContainer">
+            <div class="bottomAreaGroup">
+            <button id="GoBackButton" class="buttons" onclick="goBack()">Go Back</button>
+            </div>
+
+            <div></div> <!-- In order to space the bottom-buttons -->
+
+            <div class="bottomAreaGroup">
+            <button id="RSVP" class="buttons" onclick="rsvp()">RSVP</button>
+            </div>
+        </div>
+
+        <!-- message box (RSVP button) -->
+        <div class="custom-model-main"> 
+            <div class="custom-model-inner">
+            <div class="close-btn">×</div>
+            <div class="custom-model-wrap">
+                <div class="pop-up-content-wrap">
+                    <h3>Thanks for enrolling!</h3>
+                    <p>We saved a seat for you, see you soon</p>
+                </div>
+            </div>
+            </div>
+            <div class="bg-overlay"></div>
+        </div>
+
+        <!-- the js' script for the pop up msg box -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script>
+        $("#RSVP").on('click', function() {
+          $(".custom-model-main").addClass('model-open');
+        }
+        ); 
+        $(".close-btn, .bg-overlay").click(function(){
+          $(".custom-model-main").removeClass('model-open');
+        }
+        );
+        </script>
+
+
+        <br>
+
+    </body>
+
+    <!-- Site's footer -->
+    <br><br>
+    <div id="FooterText">
+        <p style="font-size: x-large; text-align:center">You care, You share, You change!</p>
+    </div>
+    <footer class="site-footer">
+        <div class="flex-container">
+            <a href="PrivacyPolicy.html" class="footer-links">Privacy Policy</a>
+            <a href="FAQ.html" class="footer-links">FAQ</a>
+            <ul class="social-icons">
+                <li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="https://twitter.com/?lang=he"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="youtube" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                <li><a class="linkedin" href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+        </div>
+    </footer>
+
+</html>
