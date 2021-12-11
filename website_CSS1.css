@@ -7,9 +7,6 @@
     color: #19335A;
   }
 
-:root{--boldPeach:#bf6d50
-}
-
 body{
       text-align: center;
 }
@@ -21,14 +18,14 @@ h1{
 }
 h2 {
   font-size: 4vw;
-  direction: ltr;  /* Right to Left */
+  direction: ltr;  /* Left to Right */
   padding-top: 10px;
   margin: 0;
 }
 
 h3 {
   font-size: 3vw;
-  direction: ltr;  /* Right to Left */
+  direction: ltr;  /* Left to Right */
   padding-top: 5px;
   margin: 0;
 }
@@ -110,7 +107,7 @@ main {
     margin-top: 0%;
 }
 
-/*HOME PIC
+/*PRIDUCTS PAGE
 --------------------------------------------------*/
   #packageTitle{
     background-color: whitesmoke;
@@ -157,11 +154,12 @@ main {
 	}
 
 
-/* The Modal Product*/
 #cancelbtn {
   padding: 10px 18px;
 }
 
+/* BUTTONS IN PRODUCTS PAGE + POP UP WINDOWS IN PRODUCT PAGE (inputs & buttons)
+--------------------------*/
 .footerProduct button {
   width: 200px;
   padding: 10px 18px;
@@ -213,7 +211,7 @@ span.psw {
   float: right;
   padding-top: 16px;
 }
-.modal {
+.modal { /* Pop us windows*/
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -311,7 +309,7 @@ span.psw {
   border-radius:100%;
   background-color:#33353d
 }
-
+/* Social icons in footer */
 .social-icons {
   padding-left:0;
   margin-bottom:0;
@@ -377,7 +375,7 @@ span.psw {
 
 /* REGISTER+LOGIN STYLES
 ---------------------------------------*/
-form {
+form {/*All forms style*/
   display: inline-block;
   background-color: #d1c1a5;
   border: 3px solid #f1f1f1;
@@ -387,28 +385,21 @@ form {
   color: #19335A;
 }
 
-.register{
+.register{ /* register style*/
   font-size: 1.5vw;
   font-weight: bold;
 }
 
-.question{
+.question{ /* questions in register & login*/
   font-size: 1.5vw;
 }
 
-#SignIn{
+#SignIn{ /* sign in style */
   width: 100%;
   float: center;
 }
 
-#goBackToHomePage{
-  width: 10%;
-  float: left;
-  text-align: center;
-  font-size: 1.3vw;
-}
-
-#contactUsDiv{
+#contactUsDiv{/* contact us block */
   display: inline-block;
   background-color: #d1c1a5;
   border: 3px solid #f1f1f1;
@@ -426,7 +417,7 @@ form {
 }
 
 
-/* Full-width inputs */
+/* inputs styles */
 input[type=text], input[type=password] ,input[type=email], textarea[type=message], input[type=date], input[type=tel]{
    direction: ltr;
   width: 50%;
@@ -439,7 +430,7 @@ input[type=text], input[type=password] ,input[type=email], textarea[type=message
   border-radius: 15px;
 }
 
-/* Set a style for all buttons */
+/* style for all buttons */
 button {
   background-color: #8FC8EB;
   color: #19335A;
@@ -458,6 +449,7 @@ button:hover {
   opacity: 0.8;
 }
 
+/* media querys to fit smaller screens*/
 @media only screen and (max-width: 758px) {
   .h1{
     font-size: 7vw;
@@ -468,7 +460,7 @@ button:hover {
  .modalbutton{
   font-size: 4vw;
  }
- input[type=text], input[type=password] ,input[type=email], textarea[type=message]{
+ input[type=text], input[type=password] ,input[type=email], textarea[type=message], input[type=date], input[type=tel]{
   font-size: 3vw;
  }
  button{
@@ -478,7 +470,7 @@ button:hover {
   font-size: 5vw ;
  }
 }
-
+/* media query for buttons*/
 @media only screen and (max-width: 600px) {
   button {
     background-color: #8FC8EB;

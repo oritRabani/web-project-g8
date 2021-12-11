@@ -1,3 +1,4 @@
+/* DROP DOWN card type */
 var activeDropdown;
 window.onload = function(){
     var cardDrop = document.getElementById('card-dropdown');  
@@ -12,6 +13,7 @@ window.onload = function(){
     })
 }
 
+/* DROP DOWN - visa or mastercaed */
 window.onclick = function(e) {
   console.log(e.target.tagName)
   console.log('dropdown');
@@ -38,10 +40,10 @@ window.onclick = function(e) {
   }
 }
 
-//Checking Experation validity
+/* checking that experation date of card is valid */
 function checkExpire(){
     const today = new Date();
-    const mm = today.getMonth() +1; //January is 0!
+    const mm = today.getMonth() +1; //January is 0 - need to add 1
     const yyyy = today.getFullYear();
     var inputMonth = document.getElementById("expireMonth").value;
     var inputYear = document.getElementById("expireYear").value;
@@ -61,6 +63,7 @@ function checkExpire(){
    return true;
 }
 
+/* Back to product page button */
 function goBackToProductPage(){
     window.location.href="productPage.html";
 }

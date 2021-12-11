@@ -175,7 +175,7 @@ window.onclick = function(event) {
       document.getElementById('id03').style.display = "none";
   }
 }
-
+//PJ product - clothes & home
 function CH_product3() {
   document.getElementById('id01').style.display='block'; // show the
   let par = mediaModal(); // check screen size
@@ -191,23 +191,7 @@ function CH_product3() {
   document.getElementById('modal_img').src="imageProject/Pjs.png";
   document.getElementById('target').innerHTML = words;
 }
-
-function F_product3() {
-  document.getElementById('id01').style.display='block';
-  let par = mediaModal(); // check screen size
-  let words ='<p>' +
-                  par+ 'Candies Basket' +
-                  '<br>'+
-                  'chocolates and snacks packages'+
-                  '<br>'+
-                  'to put a big smile on thier face' +
-                  '<br>'+
-                  'Donation price : 60 NIS' +
-              '</p>';
-  document.getElementById('modal_img').src="imageProject/candis.png";
-  document.getElementById('target').innerHTML = words;
-}
-
+//Pots and pans product - clothes & home
 function CH_product2() {
   document.getElementById('id01').style.display='block';
   let par = mediaModal(); // check screen size
@@ -223,7 +207,7 @@ function CH_product2() {
   document.getElementById('modal_img').src="imageProject/PotsAndPans.jfif";
   document.getElementById('target').innerHTML = words;
 }
-
+//Pillows and blankets product - clothes & home
 function CH_product1() {
   document.getElementById('id01').style.display='block';
   let par = mediaModal(); // check screen size
@@ -240,7 +224,7 @@ function CH_product1() {
   document.getElementById('target').innerHTML = words;
 }
 
-
+//Food basket product - food
 function F_product1() {
   document.getElementById('id01').style.display='block';
   let par = mediaModal(); // check screen size
@@ -256,7 +240,7 @@ function F_product1() {
   document.getElementById('modal_img').src="imageProject/food\ basket.jpg";
   document.getElementById('target').innerHTML = words;
 }
-
+// hot food product - food
 function F_product2() {
   document.getElementById('id01').style.display='block';
   let par = mediaModal(); // check screen size
@@ -270,7 +254,23 @@ function F_product2() {
   document.getElementById('modal_img').src="imageProject/warm\ food.jpg";
   document.getElementById('target').innerHTML = words;
 }
-
+// candies basket product - food 
+function F_product3() {
+  document.getElementById('id01').style.display='block';
+  let par = mediaModal(); // check screen size
+  let words ='<p>' +
+                  par+ 'Candies Basket' +
+                  '<br>'+
+                  'chocolates and snacks packages'+
+                  '<br>'+
+                  'to put a big smile on thier face' +
+                  '<br>'+
+                  'Donation price : 60 NIS' +
+              '</p>';
+  document.getElementById('modal_img').src="imageProject/candis.png";
+  document.getElementById('target').innerHTML = words;
+}
+// cash - 100 NIS
 function Cash1() {
   document.getElementById('id02').style.display='block';
   let par = mediaModal(); // check screen size
@@ -285,7 +285,7 @@ function Cash1() {
   document.getElementById('modal_img').src="imageProject/CashPic.jpg";
   document.getElementById('target2').innerHTML = words;
 }
-
+// cash 200 NIS
 function Cash2() {
   document.getElementById('id02').style.display='block';
   let par = mediaModal(); // check screen size
@@ -300,7 +300,7 @@ function Cash2() {
   document.getElementById('modal_img').src="imageProject/CashPic.jpg";
   document.getElementById('target2').innerHTML = words;
 }
-
+// cash - other price
 function Cash3() {
   document.getElementById('id03').style.display='block';
   let par = mediaModal(); // check screen size
@@ -325,13 +325,14 @@ function mediaModal(){  //check if it mobile screen size
   return par;  // returns tag needed
 }
 
-// registration valid
+// registration validation
+// validate that the emil is valid
 function validUS() {
   let firstpassword=document.getElementById("psw").value;
   let secondpassword=document.getElementById("psw_repeat").value;
   let validEmail = document.getElementById("email").value;
   const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
+// check that the user enterd the same password twice
   if(firstpassword==secondpassword){
       if(re.test(String(validEmail).toLowerCase())){
       return true;
@@ -351,11 +352,11 @@ function validUS() {
       }
   }
 }
-
+// procced to checkout button
 function goToCheckout(){
   window.location.href='checkout.html';
 }
-
+// reset my choices button
 function reset(){
   window.location.href='productPage.html';
 }
