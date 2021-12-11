@@ -356,4 +356,6 @@ function goToCheckout(){
   window.location.href='checkout.html';
 }
 
-
+function reset(){
+  window.location.href='productPage.html';
+}
