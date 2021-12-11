@@ -52,7 +52,7 @@ function checkExpire(){
         document.getElementById("message").innerHTML = "Experation year is incorrect";  
         return false;
    }
-   else if(inputYear >= yyyy && inputMonth < mm){
+   else if(inputYear == yyyy && inputMonth < mm){
         document.getElementById("message").innerHTML = "Experation month is incorrect";
         return false;
    }
